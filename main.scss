@@ -1,0 +1,516 @@
+@mixin info {
+    display: flex;
+    min-height: 100%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 1rem;
+    -webkit-transform: translate(0px, -25px);
+       -moz-transform: translate(0px, -25px);
+        -ms-transform: translate(0px, -25px);
+         -o-transform: translate(0px, -25px);
+            transform: translate(0px, -25px);
+}
+
+@mixin img-details {
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+}
+
+@mixin span {
+    background-color: rgb(218, 78, 218);
+            padding: 1rem;
+            border-radius: 5rem;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            transition: all .2s;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 5px 5px 10px black;
+                transform: translateY(-3px);
+                &:active {
+                    cursor: pointer;
+                    box-shadow: 2px 2px 5px black;
+                    transform: translateY(-1px);
+                }
+            }
+}
+
+*,*::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+.animals__slide1 {
+    background-image: url(img/bg_animal.jpg);
+    font-size: 7rem;
+    font-weight: bold;
+    text-shadow: 10px 10px 20px black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fp-tableCell {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.audio {
+    display: none;
+}
+
+// .img__tiger {
+//     height: 50vh;
+//     &--info {
+//         position: absolute;
+//         top: 50%;
+//         h2 {
+//             font-size: 4rem;
+//             margin: 1rem;
+//             padding: 1rem;
+//             text-align: center;
+//         }
+//         span {
+//             font-size: 3rem;
+//             margin: 1rem;
+//             padding: 0 2rem;
+//             background-color: rgb(206, 56, 206);
+//             border-radius: 50px;
+//         }
+//     }
+// }
+
+// .animals__slide2 {
+//     
+// }
+
+#tiger {
+    background-image: url(img/tiger.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+    }
+    span {
+        @include span;
+    }
+
+    h2 {
+        margin-right: 3rem;
+    }
+    
+}
+
+#lion {
+    background-image: url(img/lion.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#aligator {
+    background-image: url(img/aligator.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#bear {
+    background-image: url(img/bear.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#cat {
+    background-image: url(img/cat.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#dog {
+    background-image: url(img/dog.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#elephant {
+    background-image: url(img/elephant.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#frog {
+    background-image: url(img/frog.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#goat {
+    background-image: url(img/goat.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#horse {
+    background-image: url(img/horse.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#iguana {
+    background-image: url(img/iguana.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#jellyfish {
+    background-image: url(img/jellyfish.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#koala {
+    background-image: url(img/koala.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#monkey {
+    background-image: url(img/monkey.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#nilgai {
+    background-image: url(img/nilgai.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#octopus {
+    background-image: url(img/octopus.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#penguin {
+    background-image: url(img/penguin.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#rabbit {
+    background-image: url(img/rabbit.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#snake {
+    background-image: url(img/snake.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#unicorn {
+    background-image: url(img/unicorn.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#vulture {
+    background-image: url(img/vulture.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#whale {
+    background-image: url(img/whale.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#yak {
+    background-image: url(img/yak.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
+#zebra {
+    background-image: url(img/zebra.jpg);
+    @include img-details;
+
+    &-container {
+        @include info;
+
+        span {
+            @include span;
+        }
+        h2 {
+            margin-right: 3rem;
+        }
+    }
+    
+}
+
